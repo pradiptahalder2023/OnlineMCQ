@@ -1,0 +1,318 @@
+* {
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+    font-family: "Tiro Bangla", serif;
+    ;
+}
+
+.tot-container {
+    display: grid;
+    /* min-height: 95vh; */
+    grid-template-columns: 3fr auto;
+    /* grid-template-rows: 20px, 20px, auto, 50px; */
+    grid-template-areas:
+        "qcontainer qpallete";
+}
+
+.q-container {
+    grid-area: qcontainer;
+    /* border: 1px solid rgb(119, 117, 117); */
+}
+
+
+.q-pallete {
+    grid-area: qpallete;
+    border: 1px solid rgb(119, 117, 117);
+    min-height: 100vh;
+    /* margin: 10px 10px; */
+    /* padding: 10px; */
+}
+
+.pal-header {
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300;
+    background-color: #7c7b7b;
+    color: #fff;
+    padding: 5px;
+}
+
+
+.pal-legend {
+    /* position: relative; */
+    /* top: 300px; */
+    text-align: center;
+    font-weight: 300;
+    background-color: #7c7b7b;
+    color: #fff;
+    padding: 5px;
+}
+
+.imgLegend img {
+    /* position: relative;
+    top: 320px; */
+    width: auto;
+    height: auto;
+    object-fit:contain;
+}
+
+.q-pallete #button-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: auto; */
+    /* height: 420px; */
+    grid-gap: 5px;
+    margin: 5px 5px;
+    padding: 5px;
+}
+
+
+
+.butn-not-visited {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    font-weight: 300;
+    border: 2px solid rgb(158, 157, 157);
+}
+
+.butn-answered {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    clip-path: polygon(100% 50%, 100% 100%, 0% 100%, 0% 50%, 25% 6.7%, 75% 6.7%);
+    background-color: #2ba70a;
+    color: white;
+    font-weight: 300;
+    border: none;
+}
+
+.butn-not-answered {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    clip-path: polygon(100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%, 0% 0%, 100% 0%);
+    background-color: #f60d01;
+    color: white;
+    font-weight: 300;
+    border: none
+}
+
+.butn-checkedforreview {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #780d99;
+    color: white;
+    font-weight: 300;
+    border: none;
+    border-radius: 50%;
+}
+
+.q-heading1,
+.q-heading2 {
+    display: flex;
+    background-color: #f2f2f3f5;
+    border: 1px solid black;
+
+}
+
+.info {
+    margin-right: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.cont .question-type {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.cont .question,
+.choices {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.DragDropContainer {
+    /* width: 100%;
+    min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #1b1b44; */
+}
+
+#left,
+#right {
+    min-width: 300px;
+    min-height: 350px;
+    margin: 10px;
+    border: 2px dashed #f1d537;
+    background-color: #1b1b44;
+}
+
+.list {
+    background-color: deeppink;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 30px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: grab;
+    /* hand grab pointer appears*/
+}
+
+.list img {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.cmdPrimary {
+    position: fixed;
+    bottom: 120px;
+}
+
+.cmdSecondary {
+    position: fixed;
+    bottom: 60px;
+}
+
+
+
+
+/* .btn {
+    margin-top: 40px;
+} */
+
+
+
+/* .choice {
+    font-size: 20px;
+    background-color: #eee;
+    color: #000;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    width: 60%;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: fade-in 0.5s ease forwards;
+}
+
+.choice:hover{
+    background-color: #ddd;
+}
+
+.choice.selected{
+    background-color: #007bff;
+    color: #fff;
+} */
+
+/* .btn{
+    width: 60%;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 20px;
+    margin: 20px auto 0 auto;
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #08780c;
+} */
+
+
+
+
+/* .alert{
+    background-color: #5d9b63;
+    border-radius: 5px;
+    width: 100%;
+    padding: 12px;
+    position: absolute;
+    top: 0;
+    display: none;
+} */
+
+/* .startBtn{
+    width: 15%;
+    padding-block: 20px;
+    text-align: center;
+} */
+
+.timer {
+    position: absolute;
+    top: 10px;
+    right: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Adding Animation to Timer */
+/* @keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+} */
+
+/* Adding Animation to choices */
+/* @keyframes fade-in{
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+/* @media screen and (max-width:900px){
+    .container {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .container h1{
+        font-size: 24px;
+    }
+    .container .question{
+        font-size: 22px;
+    }
+
+    .timer{
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .startBtn{
+        width: 50%;
+    } 
+}*/

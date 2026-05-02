@@ -1,0 +1,19 @@
+.heading{
+    color: rgb(10, 63, 160);
+}
+.own {
+    color: rgb(17, 134, 2);
+}
+
+.imp {
+    color: rgb(241, 4, 4);
+}
+
+.timeelapsed{
+    padding: none;
+    color: rgb(75, 75, 75);
+    font-weight: 600;
+    position: fixed;
+    right: 30px;
+    
+}

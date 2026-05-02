@@ -1,0 +1,92 @@
+/* static/virtualKeyboad_style.css */
+
+/* .container-virtual-keyboard {
+     position: relative;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 500px;
+    height: 500px;
+    border: 1px solid red; 
+
+} */
+
+#bengali-text {
+    /* padding: 10px; */
+    font-size: 1.5rem;
+    /* margin-bottom: 20px; */
+    font-family: 'Noto Sans Bengali', sans-serif;
+    /* padding-right: 80px; */
+
+}
+
+/* virtual keyboard for large text box*/
+#virtual-keyboard-large {
+    position: absolute;
+    max-width: 1085px;
+    padding: 5px;
+    /* used for positioning of virtual keyboard */
+    left: 70px;
+    /* difference is here */
+    top: 5px; 
+
+    background-color: rgb(197, 197, 197);
+    border-radius: 10px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px;
+    z-index: 100;
+}
+
+/* virtual keyboard for small text box*/
+#virtual-keyboard-small {
+    position: absolute;
+    max-width: 1085px;
+    padding: 5px;
+    /* used for positioning of virtual keyboard */
+    left: 70px;
+    /* difference is here */
+    top: 5px;
+
+    background-color: rgb(197, 197, 197);
+    border-radius: 10px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px;
+    z-index: 100;
+}
+
+.key {
+    background-color: rgb(243, 243, 243);
+    border: 1px solid black;
+    border-radius: 5px;
+    grid-column: span 1;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    transition: background-color 0.2s;
+}
+
+.key:hover {
+    border: 1px solid #eeeeee;
+
+}
+
+.special-key {
+    background-color: #eef080;
+    font-weight: bold;
+}
+
+.special-key:hover {
+    background-color: #e2e61c;
+    font-weight: bold;
+}
+
+.spacebarKey {
+    grid-column: span 5;
+}

@@ -1,0 +1,32 @@
+.container{
+font-weight: 600;
+}
+
+.voice {
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+.root {
+    /* used for positioning of virtual keyboard */
+    position: relative;
+}
+
+.vLanguage {
+    position: relative;
+    display: inline-block;
+    left: 15px;
+
+}
+
+.imageLink {
+    position: relative;
+    display: inline-block;
+    left: 30px;
+}

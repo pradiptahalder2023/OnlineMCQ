@@ -1,0 +1,11 @@
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.home a{
+    position: fixed;
+    bottom: 30%;
+    left: 20%;
+}

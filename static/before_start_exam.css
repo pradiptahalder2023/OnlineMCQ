@@ -1,0 +1,77 @@
+.total-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.coundown-container {
+    display: none;
+}
+
+.coundown-containercss {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(21, 4, 95, 0.623);
+    margin-bottom: 10px;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+    padding: 10px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+
+}
+
+.timer {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 70px;
+    max-width: 100px;
+    height: 100%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.timer .time {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.timer .label {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.timer:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.btn{
+    margin-top: 20px;
+}

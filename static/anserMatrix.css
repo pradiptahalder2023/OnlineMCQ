@@ -1,0 +1,66 @@
+.heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(43, 3, 145);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.examinfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.part1,
+.part2,
+.part3,
+.part4 {
+    display: flex;
+    gap: 30px;
+    background-color: rgb(228, 239, 240);
+    font-weight: 500;
+    border: 1px solid black;
+}
+
+.part4 {
+    color: rgb(247, 4, 4);
+    font-weight: 700;
+}
+
+.tableCss {
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.notAnswered {
+    background-color: rgb(8, 4, 235);
+    color: #fff;
+
+}
+
+.wrongAnswer {
+    background-color: red;
+    color: #fff;
+
+}
+
+.correctAnswer {
+    background-color: rgb(29, 165, 2);
+    color: #fff;
+
+}
+
+.info {
+    padding: 2px;
+    margin-left: 2px;
+}
+
+img {
+    height: 50px;
+    width: 40px;
+    position: fixed;
+    top: 20px;
+    right: 40px;
+}
