@@ -1,0 +1,27 @@
+[
+    {
+        "cans": "Start Python using 'Start' button/'Script Mode' will appear/Click in 'File' menu/Click on 'New File' option",
+        "qans": "Start Python using 'Start' button/'Script Mode' will appear/Click in 'File' menu/Click on 'New File' option",
+        "qid": 96,
+        "qno": 1,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "Type Python code in Script window/Save the code with. py extension/Click on Run Menu/Click on Run Module (F5)",
+        "qans": "Save the code with. py extension/Click on Run Menu/Click on Run Module (F5)/Type Python code in Script window",
+        "qid": 97,
+        "qno": 2,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "Chapter": "\u09aa\u09be\u0987\u09a5\u09a8 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982 \u098f\u09b0 \u09ae\u09cc\u09b2\u09bf\u0995 \u09a7\u09be\u09b0\u09a3\u09be",
+        "Class": "XII",
+        "ExamDuration": "30",
+        "ExamTimeDomain": "30",
+        "QuestionType": "Drag and Drop Type",
+        "Schedule": "2026-04-12 21:34:00",
+        "Sem": "SEM - 3"
+    }
+]

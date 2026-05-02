@@ -1,0 +1,99 @@
+[
+    {
+        "cans": "\u0987\u09a8\u09aa\u09c1\u099f \u09b8\u09ae\u09cd\u09aa\u09c2\u09b0\u09cd\u09a3 \u09a8\u09be \u09b9\u09b2\u09c7",
+        "qans": "\u09a8\u09a4\u09c1\u09a8 \u09b2\u09be\u0987\u09a8 \u09af\u09cb\u0997 \u0995\u09b0\u09be\u09b0 \u09b8\u09ae\u09af\u09bc",
+        "qid": 31,
+        "qno": 1,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u0995\u099f\u09bf \u09b8\u09b0\u09be\u09b8\u09b0\u09bf \u09ae\u09be\u09a8 \u09ac\u09be \u098f\u0995\u09cd\u09b8\u09aa\u09cd\u09b0\u09c7\u09b6\u09a8",
+        "qans": "\u098f\u0995\u099f\u09bf \u09b8\u09b0\u09be\u09b8\u09b0\u09bf \u09ae\u09be\u09a8 \u09ac\u09be \u098f\u0995\u09cd\u09b8\u09aa\u09cd\u09b0\u09c7\u09b6\u09a8",
+        "qid": 33,
+        "qno": 2,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "F5",
+        "qans": "F5",
+        "qid": 83,
+        "qno": 3,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": ".py",
+        "qans": ".py",
+        "qid": 84,
+        "qno": 4,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "def",
+        "qans": "def",
+        "qid": 37,
+        "qno": 5,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": ">>>",
+        "qans": ">>>",
+        "qid": 30,
+        "qno": 6,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "Open-source",
+        "qans": "Open-source",
+        "qid": 81,
+        "qno": 7,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "Interpreter",
+        "qans": "Interpreter",
+        "qid": 82,
+        "qno": 8,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "\u0987\u09a8\u09cd\u099f\u09be\u09b0\u09aa\u09cd\u09b0\u09bf\u099f\u09c7\u09a1",
+        "qans": "\u0987\u09a8\u09cd\u099f\u09be\u09b0\u09aa\u09cd\u09b0\u09bf\u099f\u09c7\u09a1",
+        "qid": 28,
+        "qno": 9,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "(a) \u0993 (b) \u09a6\u09c1\u099f\u09bf\u0987",
+        "qans": "(a) \u0993 (b) \u09a6\u09c1\u099f\u09bf\u0987",
+        "qid": 29,
+        "qno": 10,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "IDLE",
+        "qans": "IDLE",
+        "qid": 32,
+        "qno": 11,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "Chapter": "\u09aa\u09be\u0987\u09a5\u09a8 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982 \u098f\u09b0 \u09ae\u09cc\u09b2\u09bf\u0995 \u09a7\u09be\u09b0\u09a3\u09be",
+        "Class": "XII",
+        "ExamDuration": "40",
+        "ExamTimeDomain": "60",
+        "QuestionType": "Fill in the Blanks MCQ (TYPE - II)",
+        "Schedule": "2026-04-17 22:13:00",
+        "Sem": "SEM - 3"
+    }
+]

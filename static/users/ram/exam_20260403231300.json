@@ -1,0 +1,43 @@
+[
+    {
+        "cans": "Linked List",
+        "qans": "Type Python code in Script window/Save the code with. py extension/Click on Run Menu/Click on Run Module (F5)",
+        "qid": 5,
+        "qno": 1,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "Array",
+        "qans": "Start Python using 'Start' button/'Script Mode' will appear/Click in 'File' menu/Click on 'New File' option",
+        "qid": 4,
+        "qno": 2,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "Array \u09b9\u09b2\u09cb \u098f\u0995\u099f\u09bf Dynamic Data Structure \u0964",
+        "qans": "",
+        "qid": 7,
+        "qno": 3,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "Tree",
+        "qans": "",
+        "qid": 6,
+        "qno": 4,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "Chapter": "\u09aa\u09be\u0987\u09a5\u09a8 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982 \u098f\u09b0 \u09ae\u09cc\u09b2\u09bf\u0995 \u09a7\u09be\u09b0\u09a3\u09be",
+        "Class": "XII",
+        "ExamDuration": "20",
+        "ExamTimeDomain": "30",
+        "QuestionType": "Drag and Drop Type",
+        "Schedule": "2026-04-03 23:13:00",
+        "Sem": "SEM - 3"
+    }
+]

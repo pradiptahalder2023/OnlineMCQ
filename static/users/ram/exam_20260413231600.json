@@ -1,0 +1,635 @@
+[
+    {
+        "cans": ";",
+        "qans": "",
+        "qid": 69,
+        "qno": 1,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "\u0985\u09ac\u099c\u09c7\u0995\u09cd\u099f \u0985\u09b0\u09bf\u09af\u09bc\u09c7\u09a8\u09cd\u099f\u09c7\u09a1 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982",
+        "qans": "\u09ab\u09be\u0982\u09b6\u09a8\u09be\u09b2 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982",
+        "qid": 75,
+        "qno": 2,
+        "qnotVisited": "",
+        "qreview": "R"
+    },
+    {
+        "cans": "True",
+        "qans": "True",
+        "qid": 23,
+        "qno": 3,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u099f\u09bf \u09b8\u09cb\u09b0\u09cd\u09b8 \u0995\u09cb\u09a1\u09c7\u09b0 \u09aa\u09cd\u09b0\u09a4\u09bf\u099f\u09bf \u09b2\u09be\u0987\u09a8 \u0995\u09c7 \u09b8\u09b0\u09be\u09b8\u09b0\u09bf \u098f\u0995\u09cd\u09b8\u09bf\u0995\u09bf\u0989\u099f \u0995\u09b0\u09c7",
+        "qans": "\u098f\u099f\u09bf \u09a1\u09c7\u099f\u09be\u09ac\u09c7\u09b8 \u09aa\u09b0\u09bf\u099a\u09be\u09b2\u09a8\u09be\u09b0 \u099c\u09a8\u09cd\u09af \u09ac\u09cd\u09af\u09ac\u09b9\u09c3\u09a4 \u09b9\u09af\u09bc",
+        "qid": 3,
+        "qno": 4,
+        "qnotVisited": "",
+        "qreview": "R"
+    },
+    {
+        "cans": "Statement",
+        "qans": " Keyword",
+        "qid": 68,
+        "qno": 5,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "!=",
+        "qans": "+=",
+        "qid": 105,
+        "qno": 6,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "F5",
+        "qans": "F4",
+        "qid": 66,
+        "qno": 7,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "a \u0993 b \u0989\u09ad\u09af\u09bc\u0987",
+        "qans": "Debugging",
+        "qid": 48,
+        "qno": 8,
+        "qnotVisited": "",
+        "qreview": "R"
+    },
+    {
+        "cans": "\u09b8\u09cb\u09b0\u09cd\u09b8 \u0995\u09cb\u09a1",
+        "qans": "",
+        "qid": 74,
+        "qno": 9,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "a \u0993 b \u0989\u09ad\u09af\u09bc\u0987",
+        "qans": "",
+        "qid": 71,
+        "qno": 10,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "a \u0993 b \u0989\u09ad\u09af\u09bc\u0987",
+        "qans": "",
+        "qid": 47,
+        "qno": 11,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u09b8\u09cd\u0995\u09c7\u09aa \u09b8\u09bf\u0995\u09cb\u09af\u09bc\u09c7\u09a8\u09cd\u09b8",
+        "qans": "",
+        "qid": 113,
+        "qno": 12,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "x = 5",
+        "qans": "",
+        "qid": 27,
+        "qno": 13,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "None",
+        "qans": "",
+        "qid": 110,
+        "qno": 14,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u09ab\u09be\u0982\u09b6\u09a8\u09be\u09b2 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982",
+        "qans": "",
+        "qid": 76,
+        "qno": 15,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Run",
+        "qans": "",
+        "qid": 67,
+        "qno": 16,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "in",
+        "qans": "",
+        "qid": 22,
+        "qno": 17,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u0997\u09c1\u0987\u09a1\u09cb \u09ad\u09cd\u09af\u09be\u09a8 \u09b0\u09b8\u09be\u09ae",
+        "qans": "",
+        "qid": 6,
+        "qno": 18,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "302",
+        "qans": "",
+        "qid": 111,
+        "qno": 19,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Interpreter",
+        "qans": "",
+        "qid": 59,
+        "qno": 20,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "35",
+        "qans": "",
+        "qid": 109,
+        "qno": 21,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u099f\u09bf \u09aa\u09be\u0987\u09a5\u09a8\u0995\u09c7 \u0995\u09ae\u09cd\u09aa\u09bf\u0989\u099f\u09be\u09b0\u09c7 \u09b0\u09be\u09a8 \u0995\u09b0\u09be\u09b0 \u099c\u09a8\u09cd\u09af \u098f\u09a8\u09ad\u09be\u09af\u09bc\u09b0\u09a8\u09ae\u09c7\u09a8\u09cd\u099f \u09ad\u09c7\u09b0\u09bf\u09af\u09bc\u09c7\u09ac\u09b2 \u09b8\u09c7\u099f \u0995\u09b0\u09c7",
+        "qans": "",
+        "qid": 11,
+        "qno": 22,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": ".py",
+        "qans": "",
+        "qid": 14,
+        "qno": 23,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Syntax",
+        "qans": "",
+        "qid": 57,
+        "qno": 24,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Python",
+        "qans": "",
+        "qid": 60,
+        "qno": 25,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "C",
+        "qans": "",
+        "qid": 9,
+        "qno": 26,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u0995\u09cb\u09a8\u09cb\u099f\u09bf\u0987 \u09a8\u09af\u09bc",
+        "qans": "",
+        "qid": 18,
+        "qno": 27,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "pip install <package name>",
+        "qans": "",
+        "qid": 12,
+        "qno": 28,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "a \u0993 b \u0989\u09ad\u09af\u09bc\u0987",
+        "qans": "",
+        "qid": 53,
+        "qno": 29,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "1991",
+        "qans": "",
+        "qid": 8,
+        "qno": 30,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Coding",
+        "qans": "",
+        "qid": 55,
+        "qno": 31,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Java",
+        "qans": "",
+        "qid": 78,
+        "qno": 32,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u09b2\u099c\u09bf\u0995\u09cd\u09af\u09be\u09b2 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982",
+        "qans": "",
+        "qid": 77,
+        "qno": 33,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "variable_1",
+        "qans": "",
+        "qid": 21,
+        "qno": 34,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": ">>>",
+        "qans": "",
+        "qid": 103,
+        "qno": 35,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Debugging",
+        "qans": "",
+        "qid": 56,
+        "qno": 36,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Syntax error",
+        "qans": "",
+        "qid": 58,
+        "qno": 37,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "1var",
+        "qans": "",
+        "qid": 25,
+        "qno": 38,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u09b8\u09ac\u0997\u09c1\u09b2\u09bf\u0987",
+        "qans": "",
+        "qid": 116,
+        "qno": 39,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Programming Methodology",
+        "qans": "",
+        "qid": 49,
+        "qno": 40,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "3+5",
+        "qans": "",
+        "qid": 16,
+        "qno": 41,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Ctrl + N",
+        "qans": "",
+        "qid": 64,
+        "qno": 42,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u09a6\u09c0\u09b0\u09cd\u0998 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae \u09b8\u0982\u09b0\u0995\u09cd\u09b7\u09a3 \u0995\u09b0\u09be \u09af\u09be\u09af\u09bc",
+        "qans": "",
+        "qid": 17,
+        "qno": 43,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u09a8\u0995\u09cd\u09af\u09be\u09aa\u09b8\u09c1\u09b2\u09c7\u09b6\u09a8",
+        "qans": "",
+        "qid": 1,
+        "qno": 44,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Integrated Development and Learning Environment",
+        "qans": "",
+        "qid": 13,
+        "qno": 45,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Sub-program",
+        "qans": "",
+        "qid": 51,
+        "qno": 46,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Algorithm",
+        "qans": "",
+        "qid": 44,
+        "qno": 47,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Pseudocode",
+        "qans": "",
+        "qid": 45,
+        "qno": 48,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Indentation",
+        "qans": "",
+        "qid": 50,
+        "qno": 49,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\" \" \" ________ \" \" \"",
+        "qans": "",
+        "qid": 101,
+        "qno": 50,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "#",
+        "qans": "",
+        "qid": 70,
+        "qno": 51,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u09b8\u09c7\u09ae\u09cd\u09ac\u09b2\u09bf \u09b2\u09cd\u09af\u09be\u0999\u09cd\u0997\u09c1\u09af\u09bc\u09c7\u099c",
+        "qans": "",
+        "qid": 72,
+        "qno": 52,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u09ad\u09c7\u09b0\u09bf\u09af\u09bc\u09c7\u09ac\u09b2\u09c7\u09b0 \u09a1\u09c7\u099f\u09be \u099f\u09be\u0987\u09aa \u0985\u099f\u09cb\u09ae\u09c7\u099f\u09bf\u0995 \u09ad\u09be\u09ac\u09c7 \u09a8\u09bf\u09b0\u09cd\u09a7\u09be\u09b0\u09bf\u09a4 \u09b9\u09af\u09bc",
+        "qans": "",
+        "qid": 26,
+        "qno": 53,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "#",
+        "qans": "",
+        "qid": 102,
+        "qno": 54,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u099f\u09bf \u09b8\u09cb\u09b0\u09cd\u09b8 \u0995\u09cb\u09a1 \u0995\u09c7 \u09ae\u09c7\u09b6\u09bf\u09a8 \u0995\u09cb\u09a1\u09c7 \u0985\u09a8\u09c1\u09ac\u09be\u09a6 \u0995\u09b0\u09c7",
+        "qans": "",
+        "qid": 2,
+        "qno": 55,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u099b\u09cb\u099f \u09b9\u09be\u09a4\u09c7\u09b0 \u0985\u0995\u09cd\u09b7\u09b0",
+        "qans": "",
+        "qid": 24,
+        "qno": 56,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": " .py",
+        "qans": "",
+        "qid": 65,
+        "qno": 57,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u09b8\u09ac\u0997\u09c1\u09b2\u09bf\u0987",
+        "qans": "",
+        "qid": 115,
+        "qno": 58,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u09aa\u09cd\u09b0\u09b8\u09bf\u09a1\u09bf\u0993\u09b0\u09b2 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982",
+        "qans": "",
+        "qid": 73,
+        "qno": 59,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Docstring",
+        "qans": "",
+        "qid": 80,
+        "qno": 60,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "2008",
+        "qans": "",
+        "qid": 10,
+        "qno": 61,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u0995\u099f\u09bf \u09a8\u09a4\u09c1\u09a8 \u09b2\u09be\u0987\u09a8 \u09b6\u09c1\u09b0\u09c1 \u0995\u09b0\u09c7",
+        "qans": "",
+        "qid": 20,
+        "qno": 62,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Flow-Chart",
+        "qans": "",
+        "qid": 46,
+        "qno": 63,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u0995\u09ae\u09c7\u09a8\u09cd\u099f",
+        "qans": "",
+        "qid": 114,
+        "qno": 64,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": ">>>",
+        "qans": "",
+        "qid": 62,
+        "qno": 65,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u09b8\u09b9\u099c\u09ac\u09cb\u09a7\u09cd\u09af \u09b8\u09bf\u09a8\u099f\u09cd\u09af\u09be\u0995\u09cd\u09b8",
+        "qans": "",
+        "qid": 5,
+        "qno": 66,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Variable",
+        "qans": "",
+        "qid": 52,
+        "qno": 67,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\" Monty Python's Flying Circus\" \u09a8\u09be\u09ae\u0995 \u098f\u0995\u099f\u09bf \u0995\u09ae\u09c7\u09a1\u09bf \u09b6\u09cb \u09a5\u09c7\u0995\u09c7",
+        "qans": "",
+        "qid": 4,
+        "qno": 68,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u09a6\u09c7\u09b0 \u09b8\u09ac \u0995\u099f\u09bf",
+        "qans": "",
+        "qid": 54,
+        "qno": 69,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Shell",
+        "qans": "",
+        "qid": 61,
+        "qno": 70,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "quit()",
+        "qans": "",
+        "qid": 15,
+        "qno": 71,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Prolog",
+        "qans": "",
+        "qid": 79,
+        "qno": 72,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u09b9\u09cd\u09af\u09be\u0981",
+        "qans": "",
+        "qid": 19,
+        "qno": 73,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "first.name",
+        "qans": "",
+        "qid": 112,
+        "qno": 74,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "%",
+        "qans": "",
+        "qid": 104,
+        "qno": 75,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "Keyword",
+        "qans": "",
+        "qid": 108,
+        "qno": 76,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u09b8\u09ac\u0995\u099f\u09bf\u0987",
+        "qans": "",
+        "qid": 7,
+        "qno": 77,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": ". . .",
+        "qans": "",
+        "qid": 63,
+        "qno": 78,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "Chapter": "\u09aa\u09be\u0987\u09a5\u09a8 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982 \u098f\u09b0 \u09ae\u09cc\u09b2\u09bf\u0995 \u09a7\u09be\u09b0\u09a3\u09be",
+        "Class": "XII",
+        "ExamDuration": "60",
+        "ExamTimeDomain": "30",
+        "QuestionType": "Select the correct alternative MCQ (TYPE - I)",
+        "Schedule": "2026-04-13 23:16:00",
+        "Sem": "SEM - 3"
+    }
+]

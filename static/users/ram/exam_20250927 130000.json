@@ -1,0 +1,43 @@
+[
+    {
+        "cans": "B",
+        "qans": "A",
+        "qid": 4,
+        "qno": 1,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "A",
+        "qans": "B",
+        "qid": 1,
+        "qno": 2,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "D",
+        "qans": "C",
+        "qid": 3,
+        "qno": 3,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "C",
+        "qans": "D",
+        "qid": 2,
+        "qno": 4,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "Chapter": "ALL",
+        "Class": "XI",
+        "ExamDuration": "35",
+        "ExamTimeDomain": "120",
+        "QuestionType": "ALL",
+        "Schedule": "2025-09-27 13:00:00",
+        "Sem": "SEM - I"
+    }
+]

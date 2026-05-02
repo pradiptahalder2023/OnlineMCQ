@@ -1,0 +1,19 @@
+[
+    {
+        "cans": "1/2/3/4",
+        "qans": "2",
+        "qid": 1,
+        "qno": 1,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "Chapter": "ALL",
+        "Class": "XI",
+        "ExamDuration": "10",
+        "ExamTimeDomain": "120",
+        "QuestionType": "ALL",
+        "Schedule": "2025-10-21 10:30:00",
+        "Sem": "SEM - 1"
+    }
+]

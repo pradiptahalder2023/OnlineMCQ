@@ -1,0 +1,27 @@
+[
+    {
+        "cans": "\u098f\u0997 \u09b0\u09cb\u09b2 ",
+        "qans": "",
+        "qid": 1,
+        "qno": 1,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "1/2/3/4",
+        "qans": "",
+        "qid": 2,
+        "qno": 2,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "Chapter": "ALL",
+        "Class": "XI",
+        "ExamDuration": "45",
+        "ExamTimeDomain": "120",
+        "QuestionType": "ALL",
+        "Schedule": "2025-10-21 18:21:00",
+        "Sem": "SEM - 1"
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "cans": "\u098f\u09a8\u0995\u09cd\u09af\u09be\u09aa\u09b8\u09c1\u09b2\u09c7\u09b6\u09a8",
+        "qans": "\u0987\u09a8\u09b9\u09c7\u09b0\u09bf\u099f\u09c7\u09a8\u09cd\u09b8",
+        "qid": 1,
+        "qno": 1,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "Chapter": "\u09aa\u09be\u0987\u09a5\u09a8 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982 \u098f\u09b0 \u09ae\u09cc\u09b2\u09bf\u0995 \u09a7\u09be\u09b0\u09a3\u09be",
+        "Class": "XII",
+        "ExamDuration": "45",
+        "ExamTimeDomain": "30",
+        "QuestionType": "Select the correct alternative MCQ (TYPE - I)",
+        "Schedule": "2026-04-12 23:43:00",
+        "Sem": "SEM - 3"
+    }
+]

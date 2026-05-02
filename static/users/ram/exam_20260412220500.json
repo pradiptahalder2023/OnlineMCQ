@@ -1,0 +1,19 @@
+[
+    {
+        "cans": "A - iii, B - iv, C - i, D - ii",
+        "qans": "A - iii, B - iv, C - ii, D - i",
+        "qid": 38,
+        "qno": 1,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "Chapter": "\u09aa\u09be\u0987\u09a5\u09a8 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982 \u098f\u09b0 \u09ae\u09cc\u09b2\u09bf\u0995 \u09a7\u09be\u09b0\u09a3\u09be",
+        "Class": "XII",
+        "ExamDuration": "40",
+        "ExamTimeDomain": "60",
+        "QuestionType": "Match the columns",
+        "Schedule": "2026-04-12 22:05:00",
+        "Sem": "SEM - 3"
+    }
+]

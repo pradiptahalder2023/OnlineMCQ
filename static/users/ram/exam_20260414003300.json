@@ -1,0 +1,59 @@
+[
+    {
+        "cans": "\u098f\u099f\u09bf \u09b8\u09cb\u09b0\u09cd\u09b8 \u0995\u09cb\u09a1\u09c7\u09b0 \u09aa\u09cd\u09b0\u09a4\u09bf\u099f\u09bf \u09b2\u09be\u0987\u09a8 \u0995\u09c7 \u09b8\u09b0\u09be\u09b8\u09b0\u09bf \u098f\u0995\u09cd\u09b8\u09bf\u0995\u09bf\u0989\u099f \u0995\u09b0\u09c7",
+        "qans": "\u098f\u099f\u09bf \u09b8\u09cb\u09b0\u09cd\u09b8 \u0995\u09cb\u09a1\u09c7\u09b0 \u09aa\u09cd\u09b0\u09a4\u09bf\u099f\u09bf \u09b2\u09be\u0987\u09a8 \u0995\u09c7 \u09b8\u09b0\u09be\u09b8\u09b0\u09bf \u098f\u0995\u09cd\u09b8\u09bf\u0995\u09bf\u0989\u099f \u0995\u09b0\u09c7",
+        "qid": 3,
+        "qno": 1,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u099f\u09bf \u09b8\u09cb\u09b0\u09cd\u09b8 \u0995\u09cb\u09a1 \u0995\u09c7 \u09ae\u09c7\u09b6\u09bf\u09a8 \u0995\u09cb\u09a1\u09c7 \u0985\u09a8\u09c1\u09ac\u09be\u09a6 \u0995\u09b0\u09c7",
+        "qans": "\u098f\u099f\u09bf \u09b8\u09cb\u09b0\u09cd\u09b8 \u0995\u09cb\u09a1 \u0995\u09c7 \u09ae\u09c7\u09b6\u09bf\u09a8 \u0995\u09cb\u09a1\u09c7 \u0985\u09a8\u09c1\u09ac\u09be\u09a6 \u0995\u09b0\u09c7",
+        "qid": 2,
+        "qno": 2,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "\u0997\u09c1\u0987\u09a1\u09cb \u09ad\u09cd\u09af\u09be\u09a8 \u09b0\u09b8\u09be\u09ae",
+        "qans": "\u0997\u09c1\u0987\u09a1\u09cb \u09ad\u09cd\u09af\u09be\u09a8 \u09b0\u09b8\u09be\u09ae",
+        "qid": 6,
+        "qno": 3,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u09a8\u0995\u09cd\u09af\u09be\u09aa\u09b8\u09c1\u09b2\u09c7\u09b6\u09a8",
+        "qans": "\u098f\u09a8\u0995\u09cd\u09af\u09be\u09aa\u09b8\u09c1\u09b2\u09c7\u09b6\u09a8",
+        "qid": 1,
+        "qno": 4,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "\" Monty Python's Flying Circus\" \u09a8\u09be\u09ae\u0995 \u098f\u0995\u099f\u09bf \u0995\u09ae\u09c7\u09a1\u09bf \u09b6\u09cb \u09a5\u09c7\u0995\u09c7",
+        "qans": "\" Monty Python's Flying Circus\" \u09a8\u09be\u09ae\u0995 \u098f\u0995\u099f\u09bf \u0995\u09ae\u09c7\u09a1\u09bf \u09b6\u09cb \u09a5\u09c7\u0995\u09c7",
+        "qid": 4,
+        "qno": 5,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "\u09b8\u09b9\u099c\u09ac\u09cb\u09a7\u09cd\u09af \u09b8\u09bf\u09a8\u099f\u09cd\u09af\u09be\u0995\u09cd\u09b8",
+        "qans": "\u09b8\u09b9\u099c\u09ac\u09cb\u09a7\u09cd\u09af \u09b8\u09bf\u09a8\u099f\u09cd\u09af\u09be\u0995\u09cd\u09b8",
+        "qid": 5,
+        "qno": 6,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "Chapter": "\u09aa\u09be\u0987\u09a5\u09a8 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982 \u098f\u09b0 \u09ae\u09cc\u09b2\u09bf\u0995 \u09a7\u09be\u09b0\u09a3\u09be",
+        "Class": "XII",
+        "ExamDuration": "45",
+        "ExamTimeDomain": "60",
+        "QuestionType": "Select the correct alternative MCQ (TYPE - I)",
+        "Schedule": "2026-04-14 00:33:00",
+        "Sem": "SEM - 3"
+    }
+]

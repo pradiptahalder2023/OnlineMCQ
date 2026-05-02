@@ -1,0 +1,99 @@
+[
+    {
+        "cans": "\u098f\u09a8\u0995\u09cd\u09af\u09be\u09aa\u09b8\u09c1\u09b2\u09c7\u09b6\u09a8",
+        "qans": "",
+        "qid": 1,
+        "qno": 1,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "1991",
+        "qans": "1991",
+        "qid": 8,
+        "qno": 2,
+        "qnotVisited": "",
+        "qreview": "R"
+    },
+    {
+        "cans": "\u098f\u099f\u09bf \u09aa\u09be\u0987\u09a5\u09a8\u0995\u09c7 \u0995\u09ae\u09cd\u09aa\u09bf\u0989\u099f\u09be\u09b0\u09c7 \u09b0\u09be\u09a8 \u0995\u09b0\u09be\u09b0 \u099c\u09a8\u09cd\u09af \u098f\u09a8\u09ad\u09be\u09af\u09bc\u09b0\u09a8\u09ae\u09c7\u09a8\u09cd\u099f \u09ad\u09c7\u09b0\u09bf\u09af\u09bc\u09c7\u09ac\u09b2 \u09b8\u09c7\u099f \u0995\u09b0\u09c7",
+        "qans": "\u098f\u099f\u09bf \u09aa\u09be\u0987\u09a5\u09a8 \u0987\u09a8\u09b8\u09cd\u099f\u09b2\u09c7\u09b6\u09a8\u09c7\u09b0 \u09b8\u09ae\u09af\u09bc \u09ad\u09c1\u09b2 \u09a0\u09bf\u0995 \u0995\u09b0\u09c7",
+        "qid": 11,
+        "qno": 3,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "C",
+        "qans": "",
+        "qid": 9,
+        "qno": 4,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\" Monty Python's Flying Circus\" \u09a8\u09be\u09ae\u0995 \u098f\u0995\u099f\u09bf \u0995\u09ae\u09c7\u09a1\u09bf \u09b6\u09cb \u09a5\u09c7\u0995\u09c7",
+        "qans": "",
+        "qid": 4,
+        "qno": 5,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "2008",
+        "qans": "",
+        "qid": 10,
+        "qno": 6,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u0997\u09c1\u0987\u09a1\u09cb \u09ad\u09cd\u09af\u09be\u09a8 \u09b0\u09b8\u09be\u09ae",
+        "qans": "",
+        "qid": 6,
+        "qno": 7,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u09b8\u09b9\u099c\u09ac\u09cb\u09a7\u09cd\u09af \u09b8\u09bf\u09a8\u099f\u09cd\u09af\u09be\u0995\u09cd\u09b8",
+        "qans": "",
+        "qid": 5,
+        "qno": 8,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u099f\u09bf \u09b8\u09cb\u09b0\u09cd\u09b8 \u0995\u09cb\u09a1\u09c7\u09b0 \u09aa\u09cd\u09b0\u09a4\u09bf\u099f\u09bf \u09b2\u09be\u0987\u09a8 \u0995\u09c7 \u09b8\u09b0\u09be\u09b8\u09b0\u09bf \u098f\u0995\u09cd\u09b8\u09bf\u0995\u09bf\u0989\u099f \u0995\u09b0\u09c7",
+        "qans": "",
+        "qid": 3,
+        "qno": 9,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u09b8\u09ac\u0995\u099f\u09bf\u0987",
+        "qans": "",
+        "qid": 7,
+        "qno": 10,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u099f\u09bf \u09b8\u09cb\u09b0\u09cd\u09b8 \u0995\u09cb\u09a1 \u0995\u09c7 \u09ae\u09c7\u09b6\u09bf\u09a8 \u0995\u09cb\u09a1\u09c7 \u0985\u09a8\u09c1\u09ac\u09be\u09a6 \u0995\u09b0\u09c7",
+        "qans": "",
+        "qid": 2,
+        "qno": 11,
+        "qnotVisited": "NV",
+        "qreview": ""
+    },
+    {
+        "Chapter": "\u09aa\u09be\u0987\u09a5\u09a8 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982 \u098f\u09b0 \u09ae\u09cc\u09b2\u09bf\u0995 \u09a7\u09be\u09b0\u09a3\u09be",
+        "Class": "XII",
+        "ExamDuration": "20",
+        "ExamTimeDomain": "80",
+        "QuestionType": "Select the correct alternative MCQ (TYPE - I)",
+        "Schedule": "2026-04-13 22:53:00",
+        "Sem": "SEM - 3"
+    }
+]

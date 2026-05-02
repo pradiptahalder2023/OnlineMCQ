@@ -1,0 +1,51 @@
+[
+    {
+        "cans": "\u0987\u09a8\u09cd\u099f\u09be\u09b0\u09aa\u09cd\u09b0\u09bf\u099f\u09c7\u09a1",
+        "qans": "A - ii, B - iii, C - iv, D - i",
+        "qid": 28,
+        "qno": 1,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "\u0987\u09a8\u09aa\u09c1\u099f \u09b8\u09ae\u09cd\u09aa\u09c2\u09b0\u09cd\u09a3 \u09a8\u09be \u09b9\u09b2\u09c7",
+        "qans": "A - iv, B - ii, C - i, D - iii",
+        "qid": 31,
+        "qno": 2,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": ">>>",
+        "qans": "A - iv, B - ii, C - i, D - iii",
+        "qid": 30,
+        "qno": 3,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "\u098f\u0995\u099f\u09bf \u09b8\u09b0\u09be\u09b8\u09b0\u09bf \u09ae\u09be\u09a8 \u09ac\u09be \u098f\u0995\u09cd\u09b8\u09aa\u09cd\u09b0\u09c7\u09b6\u09a8",
+        "qans": "A - iv, B - iii, C - ii, D - i",
+        "qid": 33,
+        "qno": 4,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "cans": "IDLE",
+        "qans": "A - ii, B - iii, C - iv, D - i",
+        "qid": 32,
+        "qno": 5,
+        "qnotVisited": "",
+        "qreview": ""
+    },
+    {
+        "Chapter": "\u09aa\u09be\u0987\u09a5\u09a8 \u09aa\u09cd\u09b0\u09cb\u0997\u09cd\u09b0\u09be\u09ae\u09bf\u0982 \u098f\u09b0 \u09ae\u09cc\u09b2\u09bf\u0995 \u09a7\u09be\u09b0\u09a3\u09be",
+        "Class": "XII",
+        "ExamDuration": "40",
+        "ExamTimeDomain": "30",
+        "QuestionType": "Match the columns",
+        "Schedule": "2026-04-13 22:13:00",
+        "Sem": "SEM - 3"
+    }
+]
