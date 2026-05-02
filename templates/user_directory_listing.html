@@ -1,0 +1,35 @@
+{% extends 'panel_user.html' %}
+
+{% block title %} Directory Listing {% endblock title %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+    <h1>Contents of Directory</h1>
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Size (Bytes)</th>
+                    <th>Last Modified</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for file in files %}
+                <tr>
+                    <td><a href="/user/oldresults/{{file.name}}">{{ file.name }}</a></td>
+                    <td>{{ file.size }}</td>
+                    <td>{{ file.modified }}</td>
+                    <!-- <td><a href="/directory_listing/delete/{{file.name}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Delete</a> -->
+                </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+</div>
+
+{% endif %}
+
+{% endblock maincontent %}

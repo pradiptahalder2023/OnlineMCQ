@@ -1,0 +1,62 @@
+{% extends 'panel_admin.html' %}
+
+{% block title %} Set Exam Question {% endblock title %}
+
+{% block othercss %}
+<link rel="stylesheet" href="/static/set_question.css">
+{% endblock othercss %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+
+    {% macro render_input(field, showErrors="true") %}
+    {{ field.label }}
+    {{ field(**kwargs)|safe }}
+    {% if showErrors=="true" and field.errors %}
+    <ul class="errors">
+        {% for error in field.errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endmacro %}
+
+    <h2>Set Exam Question</h2>
+    <form action="/exam/set_question" method="POST" enctype="multipart/form-data">
+
+        <!-- generates security token for this page (Ensures that this page is used for registration)-->
+        {{ form.hidden_tag() }}
+
+        <div class="mb-3">
+            {{render_input(form.qclass, class="form-control")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qsem, class="form-control")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qchapter, class="form-control")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qtype, class="form-control")}}
+
+        </div>
+
+        <button type="submit" class="btn btn-dark">Set Question</button>
+    </form>
+
+</div>
+
+{% block script %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/static/set_question.js"></script>
+{% endblock script %}
+
+{% endif %}
+
+{% endblock maincontent %}

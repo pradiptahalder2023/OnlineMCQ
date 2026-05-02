@@ -1,0 +1,260 @@
+{% extends 'base.html' %}
+
+{% block title %} Admin Panel {% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/panel_admim.css">
+{% endblock css %}
+
+{% block othercss %}
+
+{% endblock othercss %}
+
+{% block content %}
+
+<!-- main section -->
+<main>
+
+    <!-- top navbar section -->
+    <!-- <nav>
+        nav
+        <button onclick="toggleSidebar()">Button</button>
+    </nav> -->
+
+    <!-- sidebar section -->
+    <div class="sidebar">
+        <nav class="nav flex-column">
+
+            <a href="{{url_for('dashboard_admin')}}" class="nav-link">
+                <span class="icon">
+                    <i class="bi bi-grid"></i>
+                </span>
+                <span class="description">Dashboard</span>
+            </a>
+
+            <a href="{{url_for('user_admin')}}" class="nav-link">
+                <span class="icon">
+                    <i class="bi bi-person-vcard-fill"></i>
+                </span>
+                <span class="description">User Admin</span>
+            </a>
+
+            <!-- menu Class -->
+            <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#submenu4" aria-expanded="false"
+                aria-controls="submenu">
+                <span class="icon">
+                    <i class="bi bi-list-check"></i>
+                </span>
+                <span class="description">Class<i class="bi bi-caret-down-fill"></i></span>
+            </a>
+
+            <div id="submenu4" class="sub-menu collapse">
+                <a href="/class/add_class" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-plus-circle"></i>
+                    </span>
+                    <span class="description">Add Class</span>
+                </a>
+
+                <a href="/class/class_admin" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </span>
+                    <span class="description">Class Admin</span>
+                </a>
+            </div>
+
+
+            <!-- menu Semester -->
+            <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#submenu5" aria-expanded="false"
+                aria-controls="submenu">
+                <span class="icon">
+                    <i class="bi bi-list-check"></i>
+                </span>
+                <span class="description">Semester<i class="bi bi-caret-down-fill"></i></span>
+            </a>
+
+            <div id="submenu5" class="sub-menu collapse">
+                <a href="/semester/add_semester" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-plus-circle"></i>
+                    </span>
+                    <span class="description">Add Semester</span>
+                </a>
+
+                <a href="/semester/semester_admin" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </span>
+                    <span class="description">Semester Admin</span>
+                </a>
+            </div>
+
+            <!-- menu Chapter -->
+            <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#submenu1" aria-expanded="false"
+                aria-controls="submenu">
+                <span class="icon">
+                    <i class="bi bi-list-check"></i>
+                </span>
+                <span class="description">Chapter<i class="bi bi-caret-down-fill"></i></span>
+            </a>
+
+            <div id="submenu1" class="sub-menu collapse">
+                <a href="{{url_for('add_chapter')}}" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-plus-circle"></i>
+                    </span>
+                    <span class="description">Add Chapter</span>
+                </a>
+
+                <a href="{{url_for('chapter_admin')}}" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </span>
+                    <span class="description">Chapter Admin</span>
+                </a>
+            </div>
+
+            <!-- menu Question Type -->
+            <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#submenu6" aria-expanded="false"
+                aria-controls="submenu">
+                <span class="icon">
+                    <i class="bi bi-list-check"></i>
+                </span>
+                <span class="description">Q Type<i class="bi bi-caret-down-fill"></i></span>
+            </a>
+
+            <div id="submenu6" class="sub-menu collapse">
+                <a href="{{url_for('add_qtype')}}" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-plus-circle"></i>
+                    </span>
+                    <span class="description">Add Type</span>
+                </a>
+
+                <a href="{{url_for('qtype_admin')}}" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </span>
+                    <span class="description">Qtype Admin</span>
+                </a>
+            </div>
+
+
+
+            <!-- menu Question -->
+            <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#submenu2" aria-expanded="false"
+                aria-controls="submenu">
+                <span class="icon">
+                    <i class="bi bi-list-check"></i>
+                </span>
+                <span class="description">Question<i class="bi bi-caret-down-fill"></i></span>
+            </a>
+
+            <div id="submenu2" class="sub-menu collapse">
+                <a href="{{url_for('add_question')}}" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-plus-circle"></i>
+                    </span>
+                    <span class="description">Add Question</span>
+                </a>
+
+                <a href="{{url_for('question_admin')}}" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </span>
+                    <span class="description">Question Admin</span>
+                </a>
+            </div>
+
+            <!-- menu Exam -->
+            <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#submenu7" aria-expanded="false"
+                aria-controls="submenu">
+                <span class="icon">
+                    <i class="bi bi-list-check"></i>
+                </span>
+                <span class="description">Exam<i class="bi bi-caret-down-fill"></i></span>
+            </a>
+
+            <div id="submenu7" class="sub-menu collapse">
+
+                <a href="{{url_for('set_question')}}" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-plus-circle"></i>
+                    </span>
+                    <span class="description">Set Question</span>
+                </a>
+
+                <a href="{{url_for('create_question_set')}}" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </span>
+                    <span class="description">Make Question Set</span>
+                </a>
+
+                <a href="{{url_for('schedule_exam')}}" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </span>
+                    <span class="description">Schedule Exam</span>
+                </a>
+
+                <a href="{{url_for('dir_listing')}}" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </span>
+                    <span class="description">DIR Listing</span>
+                </a>
+            </div>
+
+
+
+            <a href="{{url_for('logout')}}" class="nav-link">
+                <span class="icon">
+                    <i class="bi bi-box-arrow-left"></i>
+                </span>
+                <span class="description">Logout</span>
+            </a>
+        </nav>
+    </div>
+    <!-- </aside> -->
+
+
+    <div class="main-content">
+
+        <header>
+            <!-- For Flash messages -->
+            {% with messages = get_flashed_messages(with_categories = True) %}
+            {% if messages %}
+            {% for category, message in messages %}
+            <div class="alert alert-{{category}} alert-dismissible fade show mb-0" role="alert">
+                <strong>{{ message }}</strong>
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+        </header>
+
+        {% block maincontent %}
+
+        {% endblock maincontent %}
+
+        <!-- For Footer 
+        <footer class="footer">
+            <span> Copyright @Halder Digital Solution</span>*/
+        </footer> 
+        -->
+
+    </div>
+
+</main>
+{% endblock content %}
+
+
+{% block script %}
+<script src="/static/panel_admim.js"></script>
+{% endblock script %}
+
+{% block otherscript %}
+
+{% endblock otherscript %}

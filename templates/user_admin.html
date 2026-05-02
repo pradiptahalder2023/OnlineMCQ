@@ -1,0 +1,42 @@
+{% extends 'panel_admin.html' %}
+
+{% block title %} User Admin {% endblock title %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+    <h2>Users List</h2>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">SNo</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for User in allUser %} <!--use of jinja 2 templating-->
+            <tr>
+                <!-- <th scope="row">{{User.sno}}</th> -->
+                <th scope="row">{{loop.index}}</th>
+                <td>{{User.username}}</td>
+                <td>{{User.email}}</td>
+                <td>{{User.role}}</td>
+                <td><a href="/update/{{User.id}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Update</a>
+                </td>
+                <td><a href="/delete/{{User.id}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Delete</a>
+                </td>
+            </tr>
+            {% endfor %} <!--use of jinja 2 templating-->
+        </tbody>
+    </table>
+</div>
+
+
+{% endif %}
+
+{% endblock maincontent %}

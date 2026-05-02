@@ -1,0 +1,54 @@
+{% extends 'panel_admin.html' %}
+
+{% block title %} Update Question Type {% endblock title %}
+
+{% block othercss %}
+<!-- <link rel="stylesheet" href="/static/update_chapter.css"> -->
+{% endblock othercss %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+
+    {% macro render_input(field, showErrors="true") %}
+    {{ field.label }}
+    {{ field(**kwargs)|safe }}
+    {% if showErrors=="true" and field.errors %}
+    <ul class="errors">
+        {% for error in field.errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endmacro %}
+
+    <h2>Update Question Type</h2>
+    <form action="/qtype/qtype_admin/update/{{updated_qtype[0].id}}" method="POST" enctype="multipart/form-data">
+
+        <!-- generates security token for this page (Ensures that this page is used for registration)-->
+        {{ form.hidden_tag() }}
+
+         <div class="mb-3">
+            {{render_input(form.qtypedesc, class="form-control")}}
+        </div>
+
+        <button type="submit" class="btn btn-dark">Update Question Type</button>
+    </form>
+</div>
+
+{% endif %}
+
+{% endblock maincontent %}
+
+{% block otherscript %}
+
+<script>
+    var receivedData = {{ updated_qtype | tojson }};
+    console.log(receivedData); 
+</script>
+
+<script src="{{ url_for('static', filename='update_qtype.js') }}"></script>
+
+{% endblock otherscript %}

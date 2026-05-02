@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %} Register {% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="static/register.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+{% endblock css %}
+
+{% block content %}
+
+<header>
+    <!-- For Flash messages -->
+    {% with messages = get_flashed_messages(with_categories = True) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div class="alert alert-{{category}} alert-dismissible fade show mb-0" role="alert">
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+</header>
+
+<div class="login-container">
+    <div class="form-box">
+
+        <header class="register-header">
+            <h1>Register</h1>
+        </header>
+
+        <main class="register-body">
+
+            {% macro render_input(field, showErrors="true") %}
+            {{ field.label }}
+            {{ field(**kwargs)|safe }}
+            {% if showErrors=="true" and field.errors %}
+            <ul class="errors">
+                {% for error in field.errors %}
+                <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endmacro %}
+
+            <form action="{{url_for('register')}}" method="post">
+
+                <!-- generates security token for this page (Ensures that this page is used for registration)-->
+                {{ form.hidden_tag() }}
+
+                {{render_input(form.username, placeholder="Username", class="form-control")}}
+
+                {{render_input(form.email, placeholder="Email", class="form-control")}}
+
+                <div class="password-container">
+                    {{render_input(form.password, placeholder="Password", class="form-control")}}
+                    <span id="togglePassword" class="fa fa-eye password-toggle-icon"></span>
+                </div>
+
+                <div class="password-container">
+                    {{render_input(form.confirmpassword, placeholder="Confirm Password", class="form-control")}}
+                    <span id="confirmtogglePassword" class="fa fa-eye password-toggle-icon"></span>
+                </div>
+
+                <div class="submitDiv"><input type="submit" value="Register"></div>
+            </form>
+
+            <style>
+                .errors {
+                    color: red;
+                }
+            </style>
+
+        </main>
+
+        <footer class="register-footer">
+            <p>
+                Already have an Account ? <a href="{{url_for('login')}}">Login</a>
+            </p>
+        </footer>
+    </div>
+</div>
+
+{% endblock content %}
+
+
+{% block script %}
+<script src="https://kit.fontawesome.com/737b80dd82.js" crossorigin="anonymous"></script>
+<script src="static/register.js"></script>
+{% endblock script %}

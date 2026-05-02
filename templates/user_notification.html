@@ -1,0 +1,48 @@
+{% extends 'panel_user.html' %}
+
+{% block title %} Notification {% endblock title %}
+
+{% block othercss %}
+<link rel="stylesheet" href="/static/user_notification.css">
+{% endblock othercss %}
+
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+  <h1 class="heading">Notifications</h1>
+  <ul class="list-group list-group-flush">
+
+
+    {% for notification in notifications %}
+
+    <li class="list-group-item">
+      <h6>
+        <i class="bi bi-info-circle-fill own"></i>
+        Exam Scheduled on <span class="imp">{{notification.sch}}</span> (Duration : <span
+          class="imp">{{notification.examduration}} minutes</span> ) for <span class="imp">{{notification.studyclass}} /
+          {{notification.sem}}</span>/Chapter : {{notification.chapter}}/Qtype : {{notification.qtype}}
+        <span class="timeelapsed" id="a{{loop.index}}"></span>
+      </h6>
+    </li>
+
+
+    {% endfor %}
+  </ul>
+</div>
+
+{% endif %}
+
+{% endblock maincontent %}
+
+{% block otherscript %}
+
+<script>
+  var receivedData = {{ notifications | tojson }};
+</script>
+
+<script src="{{ url_for('static', filename='user_notification.js') }}"></script>
+
+{% endblock otherscript %}

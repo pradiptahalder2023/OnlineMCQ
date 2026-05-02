@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+
+{% block title %} User Panel{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/panel_user.css">
+{% endblock css %}
+
+{% block content %}
+
+<!-- main section -->
+<main>
+
+    <!-- sidebar section -->
+    <div class="sidebar">
+        <nav class="nav flex-column">
+
+            <a href="{{url_for('dashboard_user')}}" class="nav-link">
+                <span class="icon">
+                    <i class="bi bi-grid"></i>
+                </span>
+                <span class="description">Dashboard</span>
+            </a>
+
+             <a href="{{url_for('user_profile')}}" class="nav-link">
+                <span class="icon">
+                    <i class="bi bi-grid"></i>
+                </span>
+                <span class="description">User Profile</span>
+            </a>
+
+            <a href="{{url_for('change_password')}}" class="nav-link">
+                <span class="icon">
+                    <i class="bi bi-grid"></i>
+                </span>
+                <span class="description">Change Password</span>
+            </a>
+
+            <a href="{{url_for('before_start_exam')}}" class="nav-link">
+                <span class="icon">
+                    <i class="bi bi-question-circle"></i>
+                </span>
+                <span class="description">Exam</span>
+            </a>
+
+            <a href="{{url_for('user_notification')}}" class="nav-link">
+                <span class="icon">
+                    <i class="bi bi-Bell"></i>
+                </span>
+                <span class="description">Notification</span>
+            </a>
+
+            <!-- menu with description -->
+            <!-- <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#submenu" aria-expanded="false"
+                aria-controls="submenu">
+                <span class="icon">
+                    <i class="bi bi-box-seam"></i>
+                </span>
+                <span class="description">Projects<i class="bi bi-caret-down-fill"></i></span>
+            </a>
+
+            <div id="submenu" class="sub-menu collapse">
+                <a href="#" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </span>
+                    <span class="description">Project 1</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </span>
+                    <span class="description">Project 2</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="icon">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </span>
+                    <span class="description">Project 3</span>
+                </a>
+            </div> -->
+
+            <a href="{{url_for('user_dir_listing')}}" class="nav-link">
+                <span class="icon">
+                    <i class="bi bi-file-earmark-check"></i>
+                </span>
+                <span class="description">Results</span>
+            </a>
+
+            <a href="/perfommence" class="nav-link">
+                <span class="icon">
+                    <i class="bi bi-box-arrow-left"></i>
+                </span>
+                <span class="description">Performance</span>
+            </a>
+
+            <a href="{{url_for('logout')}}" class="nav-link">
+                <span class="icon">
+                    <i class="bi bi-box-arrow-left"></i>
+                </span>
+                <span class="description">Logout</span>
+            </a>
+        </nav>
+    </div>
+
+
+    <div class="main-content">
+
+        <header>
+            <!-- For Flash messages -->
+            {% with messages = get_flashed_messages(with_categories = True) %}
+            {% if messages %}
+            {% for category, message in messages %}
+            <div class="alert alert-{{category}} alert-dismissible fade show mb-0" role="alert">
+                {{ message }}
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+        </header>
+
+        {% block maincontent %}
+
+        {% endblock maincontent %}
+
+    </div>
+
+    <!-- For Footer 
+    <footer>
+        Copyright @Halder Digital Solution
+    </footer>
+    -->
+
+
+</main>
+{% endblock content %}
+
+
+{% block script %}
+<script src="/static/panel_user.js"></script>
+{% endblock script %}
+
+
+{% block otherscript %}
+
+{% endblock otherscript %}

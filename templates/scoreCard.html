@@ -1,0 +1,40 @@
+{% extends 'panel_user.html' %}
+
+{% block title %} Score Card {% endblock title %}
+
+{% block othercss %}
+<!-- For Google Bengali Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/static/scorecard.css">
+{% endblock othercss %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+    <div class="scoreCard scorecardstyle">
+        <div class="score">
+            You Scored <em class="emp">{{obtainedMarks}}</em> out of <em class="emp">{{totalMarks}}</em>
+        </div>
+        <div>
+            <a href="/score/answermatrix" type="button" class="btn startBtn btn-lg btn-primary">Show Answer Matrix</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+{% endif %}
+
+{% endblock maincontent %}
+
+{% block otherscript %}
+
+<!-- <script src="{{ url_for('static', filename='start_exam.js') }}"></script> -->
+
+{% endblock otherscript %}

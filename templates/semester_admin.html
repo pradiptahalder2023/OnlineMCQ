@@ -1,0 +1,41 @@
+{% extends 'panel_admin.html' %}
+
+{% block title %} Semester Admin {% endblock title %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+    <h2>Semester Administrtion</h2>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">SNo</th>
+                <th scope="col">Class</th>
+                <th scope="col">Sem. Desc.</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for sm in allsemester %} <!--use of jinja 2 templating-->
+            <tr>
+                <!-- <th scope="row">{{sm.sno}}</th> -->
+                <th scope="row">{{loop.index}}</th>
+                <td>{{sm.sm_class}}</td>
+                <td>{{sm.sm_desc}}</td>
+                <td><a href="/semester/semester_admin/update/{{sm.id}}" type="button"
+                        class="btn btn-outline-dark btn-sm mx-1">Update</a>
+                </td>
+                <td><a href="/semester/semester_admin/delete/{{sm.id}}" type="button"
+                        class="btn btn-outline-dark btn-sm mx-1">Delete</a>
+                </td>
+            </tr>
+            {% endfor %} <!--use of jinja 2 templating-->
+        </tbody>
+    </table>
+</div>
+
+{% endif %}
+
+{% endblock maincontent %}

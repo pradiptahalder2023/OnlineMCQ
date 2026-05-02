@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Result in pdf</title>
+    <style type="text/css">
+        .heading {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color: rgb(43, 3, 145);
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .part1,
+        .part2,
+        .part3,
+        .part4 {
+            background-color: rgb(228, 239, 240);
+            font-weight: 500;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .part4 {
+            color: rgb(247, 4, 4);
+            font-weight: 700;
+        }
+
+        b {
+            color: rgb(43, 3, 145);
+        }
+
+        .imp {
+            color: rgb(247, 4, 4);
+            font-size: 18px;
+        }
+
+        .tableCss {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 500;
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+
+        td,
+        th {
+            padding: 2px;
+        }
+
+        th {
+            background-color: rgb(228, 239, 240);
+        }
+
+        .notAnswered {
+            background-color: rgb(8, 4, 235);
+            color: #fff;
+
+        }
+
+        .wrongAnswer {
+            background-color: red;
+            color: #fff;
+
+        }
+
+        .correctAnswer {
+            background-color: rgb(29, 165, 2);
+            color: #fff;
+
+        }
+
+        .info {
+            padding: 2px;
+            font-size: 15px;
+            margin-inline-end: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="heading">Answer Matrix</h2>
+
+        <div class="examinfo">
+            <div class="part1">
+                <span class="info">Class : <b>{{examinfo[0].Class}} , </b></span>
+                <span class="info">Semester : <b>{{examinfo[0].Sem}} , </b></span>
+                <span class="info"> Scheduled on : <b>{{examinfo[0].Schedule}}</b></span>
+            </div>
+
+            <div class="part2">
+                <span class="info">Question Type : <b>{{examinfo[0].QuestionType}} , </b> </span>
+                <span class="info">Chapter : <b>{{examinfo[0].Chapter}}</b> </span>
+            </div>
+
+            <div class="part3">
+                <span class="info">Exam Duration : <b>{{examinfo[0].ExamDuration}} Minutes , </b> </span>
+                <span class="info">Exam Time Domain : <b>{{examinfo[0].ExamTimeDomain}} Minutes</b> </span>
+            </div>
+
+            <div class="part4">
+                <span class="info">Your Score : <b class="imp">
+                        {% if score < 10 %} {{"0" ~ score}} , </b> </span>
+                {% else %}{{score}} , </b> </span>
+                {% endif %}
+                </b> </span>
+                <span class="info">Total Marks : <b class="imp">
+                        {% if total < 10 %} {{"0" ~ total}}</b> </span>
+                {% else %}{{total}}</b> </span>
+                {% endif %}</b> </span>
+            </div>
+        </div>
+
+
+        <table class="tableCss">
+            <thead>
+                <tr>
+                    <th scope="col">QNo</th>
+                    <th scope="col">QID</th>
+                    <th scope="col">Your Answer</th>
+                    <th scope="col">Correct Answer</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ans in ansmatrix %} <!--use of jinja 2 templating-->
+                <tr>
+                    <td>{{ans.qno}}</th>
+                    <td>{{ans.qid}}</td>
+                    <td>{% if ans.qans == "" %}
+                        <div class="notAnswered">Not Answered</div>
+                        {% elif ans.qans == ans.cans %}
+                        <div class="correctAnswer">{{ans.qans}}</div>
+                        {% else %}
+                        <div class="wrongAnswer">{{ans.qans}}</div>
+                        {% endif %}
+                    </td>
+                    <td>{{ans.cans}}</td>
+                </tr>
+                {% endfor %} <!--use of jinja 2 templating-->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+{% extends 'panel_user.html' %}
+
+{% block title %} Answer Matrix {% endblock title %}
+
+{% block othercss %}
+<!-- For Google Bengali Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/static/anserMatrix.css">
+{% endblock othercss %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+    <h2 class="heading">Answer Matrix</h2>
+
+    <div class="examinfo">
+        <div class="part1">
+            <div id="cl" class="info"></div>
+            <div id="sem" class="info"></div>
+            <div id="schedule" class="info"></div>
+        </div>
+
+        <div class="part2">
+            <div id="qtype" class="info"></div>
+            <div id="chapter" class="info"></div>
+        </div>
+
+        <div class="part3">
+            <div id="qtime" class="info"></div>
+            <div id="duration" class="info"></div>
+        </div>
+
+        <div class="part4">
+            <div id="score" class="info"></div>
+            <div id="total" class="info"></div>
+        </div>
+
+    </div>
+
+    <div id="table-container">
+        <!-- table will be creayed dynamically -->
+    </div>
+
+    <div>
+        <a href="/send_mail" type="button" class=" btn btn-primary" id="exitExamBtn">Exit Exam</a>
+    </div>
+
+    <!-- <div>
+        <a href="/create_pdf" type="button" class="btn btn-secondary" id="createPdf">Create PDF file</a>
+    </div> -->
+
+     <div>
+        <a href="/generate_pdf"><img src="/static/images/download_pdf.png" alt=""></a>
+    </div>
+</div>
+
+
+{% endif %}
+
+{% endblock maincontent %}
+
+{% block otherscript %}
+
+<script>
+    var receivedData = {{ ansmatrix | tojson }};
+    var questionBank = {{ qBank | tojson }};
+    var exinfo = {{ examinfo | tojson }};
+    var ior = {{ isOldResult | tojson }};
+</script>
+
+<script src="{{ url_for('static', filename='answerMatrix.js') }}"></script>
+
+{% endblock otherscript %}

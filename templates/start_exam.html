@@ -1,0 +1,76 @@
+{% extends 'panel_user.html' %}
+
+{% block title %} Start Exam {% endblock title %}
+
+{% block othercss %}
+<!-- For Google Bengali Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/static/start_exam.css">
+{% endblock othercss %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="tot-container">
+
+    <div class="q-container cont">
+        <div class="q-heading1">
+            <div class="infoclass info"></div>
+            <div class="infosem info"></div>
+            <div class="infochapter info"></div>
+            
+            <!-- <h1>Exam Heading - {{setName}}</h1> -->
+        </div>
+        <div class="q-heading2">
+            <!-- <h1>Exam Heading - {{setName}}</h1> -->
+             <div class="infoqtype info"></div>
+             <div class="infoset info">Set : {{setName}}</div>
+             <div class="infoschedule info"></div>
+        </div>
+        <div class="question-type"></div>
+        <div class="question"></div>
+        <div class="choices"></div>
+        <div class="attachment"></div>
+        <div class="scoreCard"></div>
+        <div class="timer"></div>
+        <div class="cmdPrimary">
+            <button class="btn reviewBtn btn-primary">Mark for Review and Next</button>
+            <button class="btn nextBtn btn-primary">Save and Next</button>
+        </div>
+        <div class="cmdSecondary">
+            <button class="btn submitBtn btn-danger">Submit</button>
+            <button class="btn clearBtn btn-primary">Clear Response</button>
+            <button class="btn previousBtn btn-primary">Previous</button>
+        </div>
+    </div>
+
+
+    <div class="q-pallete">
+        <div class="pal-header">Question Pallete</div>
+        <div id="button-area">
+            <!-- Buttons will be added here by JavaScript -->
+        </div>
+        <div class="pal-legend">Legends</div>
+        <div class="imgLegend"><img src="/static/images/legends.png" alt=""></div>
+    </div>
+
+
+
+    {% endif %}
+
+    {% endblock maincontent %}
+
+    {% block otherscript %}
+
+    <script>
+        var receivedData = {{ result | tojson }};
+        var examinfo = {{ examinfo | tojson }};
+    </script>
+
+    <script src="{{ url_for('static', filename='start_exam.js') }}"></script>
+
+    {% endblock otherscript %}

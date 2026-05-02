@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exam Result</title>
+    <style>
+
+        .container {
+            width: 80%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+        }
+
+        .heading {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(43, 3, 145);
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .examinfo {
+            /* display: flex;
+            flex-direction: column; */
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .part1, .part2, .part3, .part4 {
+            display: flex;
+            flex-direction: row; 
+            gap: 30px;
+            background-color: rgb(228, 239, 240);
+            font-weight: 500;
+            border: 1px solid black;
+        }
+
+        .part4 {
+            display: flex;
+            color: rgb(247, 4, 4);
+            font-weight: 700;
+        }
+
+        /* .info {
+            padding: 2px;
+            margin-left: 2px;
+        } */
+
+        .tt {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            border: 1px solid #4b4a4a;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        th,
+        td {
+            border: 1px solid #bebcbc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #bebcbc;
+            color: #333;
+            text-align:center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #bebcbc;
+        }
+
+        .notAnswered {
+            background-color: rgb(8, 4, 235);
+            color: #fff;
+
+        }
+
+        .wrongAnswer {
+            background-color: red;
+            color: #fff;
+
+        }
+
+        .correctAnswer {
+            background-color: rgb(29, 165, 2);
+            color: #fff;
+
+        }
+
+        /* .tableCss {
+            text-align: center;
+            font-weight: 500;
+            border: 1px solid black;
+            margin-top: 20px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="heading">Answer Matrix</h2>
+
+        <div class="examinfo">
+            <div class="part1">
+                <div id="cl" class="info">Class : <b>{{examinfo[0].Class}}</b></div>
+                <div id="sem" class="info"> Semester : <b>{{examinfo[0].Sem}}</b></div>
+                <div id="schedule" class="info"> Scheduled on : <b>{{examinfo[0].Schedule}}</b></div>
+            </div>
+
+            <div class="part2">
+                <div id="qtype" class="info">Question Type : <b>{{examinfo[0].QuestionType}}</b> </div>
+                <div id="chapter" class="info">Chapter : <b>{{examinfo[0].Chapter}}</b> </div>
+            </div>
+
+            <div class="part3">
+                <div id="qtime" class="info">Exam Duration : <b>{{examinfo[0].ExamDuration}} Minutes</b> </div>
+                <div id="duration" class="info">Exam Time Domain : <b>{{examinfo[0].ExamTimeDomain}} Minutes</b> </div>
+            </div>
+
+            <div class="part4">
+                <div id="score" class="info">Your Score : <b>{{score}}</b> </div>
+                <div id="total" class="info">Toal Marks : <b>{{total}}</b> </div>
+            </div>
+        </div>
+
+
+        <table class="tt">
+            <thead>
+                <tr>
+                    <th scope="col">QNo</th>
+                    <th scope="col">QID</th>
+                    <th scope="col">Your Answer</th>
+                    <th scope="col">Correct Answer</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ans in ansmatrix %} <!--use of jinja 2 templating-->
+                <tr>
+                    <td>{{ans.qno}}</th>
+                    <td>{{ans.qid}}</td>
+                    <td>{% if ans.qans == "" %}
+                        <div class="notAnswered">Not Answered</div>
+                        {% elif ans.qans == ans.cans %}
+                        <div class="correctAnswer">{{ans.qans}}</div>
+                        {% else %}
+                        <div class="wrongAnswer">{{ans.qans}}</div>
+                        {% endif %}
+                    </td>
+                    <td>{{ans.cans}}</td>
+                </tr>
+                {% endfor %} <!--use of jinja 2 templating-->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+{% extends 'panel_user.html' %}
+
+{% block title %} User Profile {% endblock title %}
+
+{% block othercss %}
+<link rel="stylesheet" href="/static/user_profile.css">
+{% endblock othercss %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+    <div class="profile-box">
+        <div class="profile-header">User's Profile</div>
+        <div class="profile-details">
+            <table>
+                <tr>
+                    <td class="colname">User ID</td>
+                    <td class="coldesc">{{userdata.id}}</td>
+                </tr>
+                <tr>
+                    <td class="colname">User Name</td>
+                    <td class="coldesc">{{userdata.username}}</td>
+                </tr>
+                <tr>
+                    <td class="colname">User Role</td>
+                    <td class="coldesc">{{userdata.role}}</td>
+                </tr>
+                <tr>
+                    <td class="colname">User Email</td>
+                    <td class="coldesc">{{userdata.email}}</td>
+                </tr>
+                <tr>
+                    <td class="colname">User Mobile</td>
+                    <td class="coldesc">
+                        {% if userdata.mobileno is none %}
+                        Not Available <a href="/updatePhone/mobile/new" class="btn btn-primary mobile" role="button">Update</a>
+                        {% else %}
+                        {{userdata.mobileno}} <a href="/updatePhone/mobile/change" class="btn btn-primary mobile" role="button">Change</a>
+                        {% endif %}</td>
+                </tr>
+                <tr>
+                    <td class="colname">User Whatsapp</td>
+                    <td class="coldesc">
+                        {% if userdata.whatsappno is none %}
+                        Not Available <a href="/updatePhone/whatsapp/new" class="btn btn-primary whatsapp" role="button">Update</a>
+                        {% else %}
+                        {{userdata.whatsappno}} <a href="/updatePhone/whatsapp/change" class="btn btn-primary whatsapp" role="button">Change</a>
+                        {% endif %}</td>
+                </tr>
+                <tr>
+                    <td class="colname">Exam Performence</td>
+                    <td class="coldesc">{{avgp}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- <div class="photo">{{userdata.id}}</div> -->
+    </div>
+
+
+</div>
+
+
+
+{% endif %}
+
+{% endblock maincontent %}
+
+{% block otherscript %}
+<!-- <script src="{{ url_for('static', filename='performence.js') }}"></script> -->
+{% endblock otherscript %}

@@ -1,0 +1,229 @@
+{% extends 'panel_admin.html' %}
+
+{% block title %} Add Question {% endblock title %}
+
+{% block othercss %}
+<!-- used for Bengali Virtual Keyboard -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='virtualKeyboad_style.css') }}">
+<link rel="stylesheet" href="/static/add_question.css">
+{% endblock othercss %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+
+    {% macro render_input(field, showErrors="true") %}
+    {{ field.label }}
+    {{ field(**kwargs)|safe }}
+    {% if showErrors=="true" and field.errors %}
+    <ul class="errors">
+        {% for error in field.errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endmacro %}
+
+    <h2>Add New Question</h2>
+    <form action="/add_question" method="POST" enctype="multipart/form-data">
+
+        <!-- generates security token for this page (Ensures that this page is used for registration)-->
+        {{ form.hidden_tag() }}
+
+        <div class="mb-3">
+            {{render_input(form.qclass, class="form-control")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qsem, class="form-control")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qchapter, class="form-control")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qtype, class="form-control")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qhasimage,class="form-select",onchange="toggleInput()")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qimagefile,class="form-control")}}
+        </div>
+
+        <div id="clKBq" class="mb-3 root">
+            {{render_input(form.qquestion,class="form-control")}}
+
+            <a href="#" id="vquestion" class="btn btn-warning voice" role="button"><i class="bi bi-mic"></i></a>
+
+            <div class="form-check form-switch vLanguage">
+                <input class="form-check-input" type="checkbox" id="vLangquestion" checked>
+                <label class="form-check-label" for="mySwitch">BENG</label>
+            </div>
+
+            <div class="imageLink">
+                <a id="KBq" href="#" onclick="javascript:onCliclDisplayKeyboard(event,this,'qquestion')"><img
+                        src="/static/images/keyboard (9).png" alt=""></a>
+            </div>
+
+        </div>
+
+        <div id="clKBqop1" class="mb-3 root">
+            {{render_input(form.qop1,class="form-control")}}
+
+            <a href="#" id="vop1" class="btn btn-warning voice" role="button"><i class="bi bi-mic"></i></a>
+
+            <div class="form-check form-switch vLanguage">
+                <input class="form-check-input" type="checkbox" id="vLangvop1" checked>
+                <label class="form-check-label" for="mySwitch">BENG</label>
+            </div>
+            <div class="imageLink">
+                <a id="KBqop1" href="#" onclick="javascript:onCliclDisplayKeyboard(event,this,'qop1')"><img
+                        src="/static/images/keyboard (9).png" alt=""></a>
+            </div>
+        </div>
+
+        <div id="clKBqop2" class="mb-3 root">
+            {{render_input(form.qop2,class="form-control")}}
+
+            <a href="#" id="vop2" class="btn btn-warning voice" role="button"><i class="bi bi-mic"></i></a>
+
+            <div class="form-check form-switch vLanguage">
+                <input class="form-check-input" type="checkbox" id="vLangvop2" checked>
+                <label class="form-check-label" for="mySwitch">BENG</label>
+            </div>
+
+            <div class="imageLink">
+                <a id="KBqop2" href="#" onclick="javascript:onCliclDisplayKeyboard(event,this,'qop2')"><img
+                        src="/static/images/keyboard (9).png" alt=""></a>
+            </div>
+        </div>
+
+        <div id="clKBqop3" class="mb-3 root">
+            {{render_input(form.qop3,class="form-control")}}
+            <a href="#" id="vop3" class="btn btn-warning voice" role="button"><i class="bi bi-mic"></i></a>
+
+            <div class="form-check form-switch vLanguage">
+                <input class="form-check-input" type="checkbox" id="vLangvop3" checked>
+                <label class="form-check-label" for="mySwitch">BENG</label>
+            </div>
+            <div class="imageLink">
+                <a id="KBqop3" href="#" onclick="javascript:onCliclDisplayKeyboard(event,this,'qop3')"><img
+                        src="/static/images/keyboard (9).png" alt=""></a>
+            </div>
+
+        </div>
+
+        <div id="clKBqop4" class="mb-3 root">
+            {{render_input(form.qop4,class="form-control")}}
+            <a href="#" id="vop4" class="btn btn-warning voice" role="button"><i class="bi bi-mic"></i></a>
+
+            <div class="form-check form-switch vLanguage">
+                <input class="form-check-input" type="checkbox" id="vLangvop4" checked>
+                <label class="form-check-label" for="mySwitch">BENG</label>
+            </div>
+            <div class="imageLink">
+                <a id="KBqop4" href="#" onclick="javascript:onCliclDisplayKeyboard(event,this,'qop4')"><img
+                        src="/static/images/keyboard (9).png" alt=""></a>
+            </div>
+        </div>
+
+        <div id="clKBqanswer" class="mb-3 root">
+            {{render_input(form.qanswer,class="form-control")}}
+            <a href="#" id="vanswer" class="btn btn-warning voice" role="button"><i class="bi bi-mic"></i></a>
+
+            <div class="form-check form-switch vLanguage">
+                <input class="form-check-input" type="checkbox" id="vLanganswer" checked>
+                <label class="form-check-label" for="mySwitch">BENG</label>
+            </div>
+            <div class="imageLink">
+                <a id="KBqanswer" href="#" onclick="javascript:onCliclDisplayKeyboard(event,this,'qanswer')"><img
+                        src="/static/images/keyboard (9).png" alt=""></a>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-dark">Add Question</button>
+    </form>
+
+</div>
+
+<!-- Modal class (for column matching question type) -->
+<div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Question Format (Column Matching)</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <strong>
+                    <pre>
+To store Column Maching Question like the following
+        ----------------------------------
+        Column A            Column B
+        ----------------------------------
+        A)Sky              i)White           
+        B)Water            ii)Red
+        C)Milk             iii)Colourless
+        D)Apple            iv)Blue
+        ----------------------------------
+Ensure to Enter the question in the following format :
+
+A)Sky,i)White/B)Water,ii)Red/C)Milk,iii)Colourless/D)Apple,iv)Blue
+
+                </pre>
+                </strong>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal class (for Drag and Drop question type) -->
+<div class="modal fade" id="myModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Question Format (Drag and Drop)</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <strong>
+                    <pre>
+Ensure to Enter the question in the following format :
+
+Item 1/Item 2/Item 3/Item 4
+                </pre>
+                </strong>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block script %}
+<script src="/static/add_question.js"></script>
+<!-- for virtual keyboard -->
+<!-- <script src="{{ url_for('static', filename='virtualKeyboad_script.js') }}"></script> -->
+{% endblock script %}
+
+{% endif %}
+
+{% endblock maincontent %}

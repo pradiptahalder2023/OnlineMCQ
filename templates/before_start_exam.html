@@ -1,0 +1,67 @@
+{% extends 'panel_user.html' %}
+
+{% block title %} Initiating Exam {% endblock title %}
+
+{% block othercss %}
+<!-- For Google Bengali Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/static/before_start_exam.css">
+{% endblock othercss %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="total-container">
+
+    <div class="coundown-container">
+        <div>
+            <h1>Exam will start in</h1>
+        </div>
+
+        <div class="countdown">
+
+            <div class="timer">
+                <span class="time" id="days">00</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="timer">
+                <span class="time" id="hrs">00</span>
+                <span class="label">Hrs</span>
+            </div>
+            <div class="timer">
+                <span class="time" id="mins">00</span>
+                <span class="label">Mins</span>
+            </div>
+            <div class="timer">
+                <span class="time" id="secs">00</span>
+                <span class="label">Secs</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="/exam/start_exam" type="button" id="startExam" class="btn startBtn btn-lg btn-primary">Start Exam </a>
+    </div>
+
+</div>
+
+
+
+{% endif %}
+
+{% endblock maincontent %}
+
+{% block otherscript %}
+
+<script>
+    var receivedData = {{ result | tojson }};
+    var exam_status = {{ examstat | tojson }};
+</script>
+
+<script src="{{ url_for('static', filename='before_start_exam.js') }}"></script>
+
+{% endblock otherscript %}

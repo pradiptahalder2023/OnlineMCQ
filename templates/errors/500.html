@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} Error - 500 {% endblock title %}
+
+{% block css %} {% endblock css %}
+
+{% block content %}
+    <h1>500</h1>
+    <h2>Something went wrong </h2>
+    
+    <a href="{{url_for('login')}}">Home</a>
+{% endblock content %}

@@ -1,0 +1,48 @@
+{% extends 'panel_admin.html' %}
+
+{% block title %} Chapter Admin {% endblock title %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+    <h2>Chapter Administrtion</h2>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">SNo</th>
+                <th scope="col">Class</th>
+                <th scope="col">Semester</th>
+                <th scope="col">Chapter No.</th>
+                <th scope="col">Description</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for chapter in allchapter %} <!--use of jinja 2 templating-->
+            <tr>
+                <!-- <th scope="row">{{chapter.sno}}</th> -->
+                <th scope="row">{{loop.index}}</th>
+                <td>{{chapter.ch_class}}</td>
+                <td>{{chapter.ch_sem}}</td>
+                <td>{{chapter.ch_no}}</td>
+                <td>{{chapter.ch_desc}}</td>
+                <td><a href="/chapter/chapter_admin/update/{{chapter.id}}" type="button"
+                        class="btn btn-outline-dark btn-sm mx-1">Update</a>
+                </td>
+                <td><a href="/chapter/chapter_admin/delete/{{chapter.id}}" type="button"
+                        class="btn btn-outline-dark btn-sm mx-1">Delete</a>
+                </td>
+            </tr>
+            {% endfor %} <!--use of jinja 2 templating-->
+        </tbody>
+    </table>
+</div>
+
+
+{% endif %}
+
+{% endblock maincontent %}

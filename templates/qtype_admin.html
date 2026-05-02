@@ -1,0 +1,37 @@
+{% extends 'panel_admin.html' %}
+
+{% block title %} Question Type Admin {% endblock title %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+    <h2>Question Type Administrtion</h2>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">SNo</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for qtype in allqtype %} <!--use of jinja 2 templating-->
+            <tr>
+                <!-- <th scope="row">{{allqtype.sno}}</th> -->
+                <th scope="row">{{loop.index}}</th>
+                <td>{{qtype.qtype_desc}}</td>
+                <td><a href="/qtype/qtype_admin/update/{{qtype.id}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Update</a>
+                </td>
+                <td><a href="/qtype/qtype_admin/delete/{{qtype.id}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Delete</a>
+                </td>
+            </tr>
+            {% endfor %} <!--use of jinja 2 templating-->
+        </tbody>
+    </table>
+</div>
+
+{% endif %}
+
+{% endblock maincontent %}

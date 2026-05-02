@@ -1,0 +1,63 @@
+{% extends 'panel_user.html' %}
+
+{% block title %} Update phone {% endblock title %}
+
+{% block othercss %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/css/intlTelInput.css">
+<link rel="stylesheet" href="/static/updatePhone.css">
+{% endblock othercss %}
+
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+
+    {% macro render_input(field, showErrors="true") %}
+    {{ field.label }}
+    {{ field(**kwargs)|safe }}
+    {% if showErrors=="true" and field.errors %}
+    <ul class="errors">
+        {% for error in field.errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endmacro %}
+
+    <h2>
+        {% if device == 'mobile' and mode == 'new' %}
+        Add New Phone Number
+        {% elif device == 'mbile' and mode == 'change' %}
+        Edit Phone Number
+        {% elif device == 'whatsapp' and mode == 'new' %}
+        Add New whatapp Number
+        {% elif device == 'whatsapp' and mode == 'change' %}
+        Edit whatapp Number
+        {% endif %}
+    </h2>
+
+    <form action="/updatePhone/{{device}}/{{mode}}" method="POST" enctype="multipart/form-data">
+
+        <!-- generates security token for this page (Ensures that this page is used for registration)-->
+        {{ form.hidden_tag() }}
+
+        <div class="mb-3">
+            {{render_input(form.phone, class="form-control")}}
+        </div>
+
+        <button type="submit" class="btn btn-dark">Update</button>
+      
+    </form>
+</div>
+
+{% endif %}
+
+{% endblock maincontent %}
+
+{% block otherscript %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/intlTelInput.min.js"></script>
+<script src="{{ url_for('static', filename='updatePhone.js') }}"></script>
+
+{% endblock otherscript %}

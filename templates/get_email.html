@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %} Get email {% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="static/login.css">
+{% endblock css %}
+
+{% block content %}
+
+<header>
+    <!-- For Flash messages -->
+    {% with messages = get_flashed_messages(with_categories = True) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div class="alert alert-{{category}} alert-dismissible fade show mb-0" role="alert">
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+</header>
+
+<div class="login-container">
+
+    <div class="form-box">
+
+        <header>
+            <h1 id="title">Forgot Password</h1>
+        </header>
+
+        <main class="login-body">
+
+            {% macro render_input(field, showErrors="true") %}
+            {{ field.label }}
+            {{ field(**kwargs)|safe }}
+            {% if showErrors=="true" and field.errors %}
+            <ul class="errors">
+                {% for error in field.errors %}
+                <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endmacro %}
+
+            <form action="{{url_for('forgot_password')}}" method="post">
+                {{ form.hidden_tag() }}
+
+                {{render_input(form.email, placeholder="Your Email", class="form-control")}}
+
+               <div class="submitDiv"><input type="submit" value="Submit" id="loginbtn"></div>
+                
+            </form>
+
+            <p class="signup"><a href="{{url_for('login')}}">Login</a> | <a href="{{url_for('register')}}"
+                    id="signupbtn">Register</a></p>
+        </main>
+
+    </div>
+</div>
+{% endblock content %}
+
+{% block script %}
+<script src="https://kit.fontawesome.com/737b80dd82.js" crossorigin="anonymous"></script>
+<script src="static/login.js"></script>
+{% endblock script %}

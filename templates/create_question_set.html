@@ -1,0 +1,52 @@
+{% extends 'panel_admin.html' %}
+
+{% block title %} Create question Set {% endblock title %}
+
+{% block othercss %}
+<!-- <link rel="stylesheet" href="/static/add_question.css"> -->
+{% endblock othercss %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+
+    {% macro render_input(field, showErrors="true") %}
+    {{ field.label }}
+    {{ field(**kwargs)|safe }}
+    {% if showErrors=="true" and field.errors %}
+    <ul class="errors">
+        {% for error in field.errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endmacro %}
+
+    <h2>Create Question Set</h2>
+    <form action="/create_question_set" method="POST" enctype="multipart/form-data">
+
+        <!-- generates security token for this page (Ensures that this page is used for registration)-->
+        {{ form.hidden_tag() }}
+
+        <div class="mb-3">
+            {{render_input(form.setno, class="form-control")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.setalgo, class="form-control")}}
+        </div>
+
+        <button type="submit" class="btn btn-dark">Make Question Set</button>
+    </form>
+
+</div>
+
+{% block script %}
+<script src="/static/create_question_set.js"></script>
+{% endblock script %}
+
+{% endif %}
+
+{% endblock maincontent %}

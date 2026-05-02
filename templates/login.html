@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %} Login {% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="static/login.css">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+{% endblock css %}
+
+{% block content %}
+
+<header>
+    <!-- For Flash messages -->
+    {% with messages = get_flashed_messages(with_categories = True) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div class="alert alert-{{category}} alert-dismissible fade show mb-0" role="alert">
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+</header>
+
+<div class="login-container">
+
+    <div class="form-box">
+
+        <header>
+            <h1 id="title">Login</h1>
+        </header>
+
+        <main class="login-body">
+
+            {% macro render_input(field, showErrors="true") %}
+            {{ field.label }}
+            {{ field(**kwargs)|safe }}
+            {% if showErrors=="true" and field.errors %}
+            <ul class="errors">
+                {% for error in field.errors %}
+                <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endmacro %}
+
+            <form action="{{url_for('login')}}" method="post">
+                {{ form.hidden_tag() }}
+
+                {{render_input(form.username, placeholder="Username", class="form-control")}}
+
+                <div class="password-container">
+                    {{render_input(form.password, placeholder="Password", class="form-control")}}
+                    <!-- <i id="togglePassword" class="bi bi-eye-fill password-toggle-icon"></i> -->
+                    <span id="togglePassword" class="fa fa-eye password-toggle-icon"></span>
+                </div>
+
+                <a href="{{url_for('get_email')}}">Forgot Password</a>
+
+                <!-- shows the google recaptcha -->
+                <div class="g-recaptcha" data-sitekey="{{site_key}}"></div>
+
+                <div class="submitDiv"><input type="submit" value="Login"></div>
+
+                <!-- "Or" separator -->
+                <div class="or-separator">
+                    <hr>
+                    <span>OR</span>
+                    <hr>
+                </div>
+
+                <div class="links">
+                    <a href="/faebook"><img id="facebook" src="/static/images/Logo_facebook.png" alt=""></a>
+                    <a href="/google"><img id="google" src="/static/images/Logo_Google.png" alt=""></a>
+                    <a href="/login/twitter"><img id="twitter" src="/static/images/logo_twitterX.png" alt=""></a>
+                </div>
+
+
+
+            </form>
+
+            <p class="signup">Do not have an Account ?<a href="{{url_for('register')}}" id="signupbtn"> Register</a></p>
+        </main>
+
+    </div>
+</div>
+{% endblock content %}
+
+{% block script %}
+<script src="https://kit.fontawesome.com/737b80dd82.js" crossorigin="anonymous"></script>
+<script src="static/login.js"></script>
+<!-- FOR GOOGLE RECAPCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+{% endblock script %}

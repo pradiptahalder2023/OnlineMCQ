@@ -1,0 +1,105 @@
+{% extends 'panel_admin.html' %}
+
+{% block title %} Update Question {% endblock title %}
+
+{% block othercss %}
+<link rel="stylesheet" href="/static/update_question.css">
+{% endblock othercss %}
+
+{% block maincontent %}
+
+{% if current_user.is_authenticated %}
+
+<div class="container">
+
+    {% macro render_input(field, showErrors="true") %}
+    {{ field.label }}
+    {{ field(**kwargs)|safe }}
+    {% if showErrors=="true" and field.errors %}
+    <ul class="errors">
+        {% for error in field.errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endmacro %}
+
+    <h2>Update Question</h2>
+    <form action="/question/update/{{updated_question[0].id}}" method="POST" enctype="multipart/form-data">
+
+        <!-- generates security token for this page (Ensures that this page is used for registration)-->
+        {{ form.hidden_tag() }}
+
+        <div class="mb-3">
+            {{render_input(form.qclass, class="form-select")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qsem, class="form-select")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qchapter, class="form-control")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qtype, class="form-control")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qhasimage,class="form-select",onchange="toggleInput()")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qimagefile,class="form-control")}}
+            {{render_input(form.qfilename,class="form-control")}}
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qquestion,class="form-control")}}
+            <a href="#" id="vquestion" class="btn btn-warning voice" role="button"><i class="bi bi-mic"></i></a>
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qop1,class="form-control")}}
+            <a href="#" id="vop1" class="btn btn-warning voice" role="button"><i class="bi bi-mic"></i></a>
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qop2,class="form-control")}}
+            <a href="#" id="vop2" class="btn btn-warning voice" role="button"><i class="bi bi-mic"></i></a>
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qop3,class="form-control")}}
+            <a href="#" id="vop3" class="btn btn-warning voice" role="button"><i class="bi bi-mic"></i></a>
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qop4,class="form-control")}}
+            <a href="#" id="vop4" class="btn btn-warning voice" role="button"><i class="bi bi-mic"></i></a>
+        </div>
+
+        <div class="mb-3">
+            {{render_input(form.qanswer,class="form-control")}}
+            <a href="#" id="vanswer" class="btn btn-warning voice" role="button"><i class="bi bi-mic"></i></a>
+        </div>
+
+        <button type="submit" class="btn btn-dark">Update Question</button>
+    </form>
+</div>
+
+{% endif %}
+
+{% endblock maincontent %}
+
+{% block otherscript %}
+
+<script>
+    var receivedData = {{ updated_question | tojson }};
+    console.log(receivedData); 
+</script>
+
+<script src="{{ url_for('static', filename='update_question.js') }}"></script>
+
+{% endblock otherscript %}
